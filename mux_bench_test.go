@@ -547,7 +547,7 @@ func BenchmarkPat_Route3000(b *testing.B) {
 //
 // Benchmarks for julienschmidt/httprouter:
 //
-func httpRouterHandle(rw http.ResponseWriter, _ *http.Request, _ map[string]string) {
+func httpRouterHandle(rw http.ResponseWriter, _ *http.Request, _ httprouter.Params) {
 	fmt.Fprintf(rw, "hello")
 }
 
